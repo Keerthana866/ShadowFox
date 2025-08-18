@@ -1,32 +1,37 @@
 # ShadowFox  
 
-This repository contains internship tasks completed as part of the **ShadowFox Internship Program**. It includes two machine learning projects:  
+This repository contains two machine learning projects developed as part of my internship tasks.  
 
-1. **Boston House Price Prediction (Level 1 - Beginner)**  
-2. **Loan Approval Prediction (Level 2 - Intermediate)**  
+## Level 1: Boston House Price Prediction  
+- Predicts house prices in Boston using Linear Regression.  
+- Dataset: `HousingData.csv`  
+- Steps involved:  
+  1. Data preprocessing (handled missing values)  
+  2. Train-test split  
+  3. Model training with Linear Regression  
+  4. Model evaluation (MSE, R² Score)  
+  5. Visualization of actual vs predicted values  
 
----
+## Level 2: Loan Approval Prediction  
+- Predicts loan approval status using Logistic Regression and Random Forest.  
+- Dataset: Loan dataset with applicant details (financial history, income, etc.)  
+- Steps involved:  
+  1. Data preprocessing and encoding categorical features  
+  2. Feature scaling  
+  3. Training Logistic Regression and Random Forest models  
+  4. Model evaluation (Accuracy, Precision, Recall, F1-score)  
+  5. Feature importance analysis (Random Forest)  
 
-## 1. Boston House Price Prediction (Level 1 - Beginner)  
+## Technologies Used  
+- Python  
+- pandas  
+- numpy  
+- matplotlib  
+- scikit-learn  
 
-### Project Overview  
-- Predicts house prices in Boston using machine learning.  
-- Dataset: `HousingData.csv` (includes features like number of rooms, crime rate, etc.)  
-- Model: Linear Regression  
-
-### Steps Involved  
-1. Data Preprocessing (handled missing values)  
-2. Splitting dataset into training and testing sets  
-3. Training Linear Regression model  
-4. Evaluating performance (MSE, R² Score)  
-5. Visualizing actual vs predicted prices  
-
-### Results  
-- The model predicts Boston house prices fairly accurately.  
-- Evaluation metrics are printed in the console.  
-- A scatter plot compares actual vs predicted values.  
-
-### How to Run  
+## How to Run  
 ```bash
 pip install pandas numpy matplotlib scikit-learn
-python task.py
+python task.py   # For Boston House Price Prediction
+python loan_prediction.py   # For Loan Approval Prediction
+
