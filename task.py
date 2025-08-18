@@ -45,7 +45,7 @@ print("R^2 Score:", round(r2, 3))
 plt.figure(figsize=(6, 6))
 
 # Blue dots → model predictions
-plt.scatter(y_test, y_pred, color="blue", alpha=0.6, edgecolor="k", label="Model Predictions")
+plt.scatter(y_test, y_pred, color="blue", alpha=0.6, edgecolors="k", label="Model Predictions")
 
 # Red line → perfect prediction line
 plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color="red", label="Perfect Prediction")
